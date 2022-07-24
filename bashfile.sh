@@ -1,15 +1,15 @@
 #! /bin/bash
 
-# Menggabungkan file
+# 1. Menggabungkan file
 csvstack 2019-Oct-sample.csv 2019-Nov-sample.csv > join_data.csv
 
-# Menyeleksi kolom yang relevan
+# 2. Menyeleksi kolom yang relevan
 csvcut -c 2,3,4,5,7,8 join_data.csv > relevant_data.csv
 
-# Filtering purchase data
+# 3. Filtering purchase data
 csvgrep -c "event_type" -m "purchase" relevant_data.csv > purchase_data.csv
 
-# Splitting category_code into category and product_name
+# 4. Splitting category_code into category and product_name
 ## Filter category_code data
 csvcut -c 3,6 join_data.csv | csvgrep -c "event_type" -m "purchase" | csvcut -c 2 > category_code.csv
 
