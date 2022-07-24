@@ -6,7 +6,7 @@ Project ini dibuat ini memebuhi tugas shell di pacmann.ai. Tugas bertujuan untuk
 1. Menggabungkan data bulan november dan bulan oktober menggunakan csvstack.
 2. Menyeleksi kolom yang relevan menggunakan csvcut.
 3. Filtering untuk purchase type menggunakan csvgrep.
-4. Splitting kolom category_code menjadi category dan product_name mengggunakan csvcut, csvgrep, cut, dan awk. Kemudian data digabungkan menjadi final_data.
+4. Splitting kolom category_code menjadi category dan product_name mengggunakan csvcut, csvgrep, cut, dan awk. Kemudian data digabungkan menjadi final_data.csv.
 
 ### Penggunaan program
 Program memerlukan data traffic ecommerce yang dapat di download di https://drive.google.com/file/d/1rKkUQU-sXIDka3rVNBahp6q3wDhrPY-1/view program hanya perlu dipangggil dengan syntaks ./bashfile.sh di terminal.
