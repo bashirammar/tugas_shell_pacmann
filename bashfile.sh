@@ -16,7 +16,7 @@ csvcut -c 3,6 join_data.csv | csvgrep -c "event_type" -m "purchase" | csvcut -c 
 ## split into product_name and category
 cut -d "." -f 1 category_code.csv | awk -F'\t' -vOFS='\t' '{ gsub("category_code", "category", $1) ; print }'  > category.csv
 
-cut -d "." -f 2 category_code.csv | awk -F'\t' -vOFS='\t' '{ gsub("category_code", "product_name", $1) ; print }' > product_name.csv
+awk -F '.' '{print $NF}' category_code.csv | awk -F'\t' -vOFS='\t' '{ gsub("category_code", "product_name", $1) ; print }' > product_name.csv
 
 ## join purchase_data.csv, category.csv, and product_name.csv
 paste purchase_data.csv category.csv product_name.csv -d "," > final_data.csv

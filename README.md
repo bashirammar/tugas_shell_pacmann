@@ -12,4 +12,4 @@ Project ini dibuat ini memebuhi tugas shell di pacmann.ai. Tugas bertujuan untuk
 Program memerlukan data traffic ecommerce yang dapat di download di https://drive.google.com/file/d/1rKkUQU-sXIDka3rVNBahp6q3wDhrPY-1/view program hanya perlu dipangggil dengan syntaks ./bashfile.sh di terminal.
 
 ### Saran perbaikan
-Program ini masih memiliki banyak kekurangan dan ketidak sesuaian hasil yang diharapkan dari sisi jumlah karakter. Koreksi dan saran diharapkan agar saya dapat belajar lebih baik dalam shell tooling.
+Program ini masih memiliki banyak kekurangan. Koreksi dan saran diharapkan agar saya dapat belajar lebih baik dalam shell tooling.
